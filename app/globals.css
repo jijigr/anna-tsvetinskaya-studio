@@ -497,7 +497,13 @@ img {
 }
 
 .services {
-  background: var(--cream);
+  background: linear-gradient(
+    180deg,
+    #ffdeee 0,
+    #ffeaf4 72px,
+    #ffffff 220px,
+    #ffffff 100%
+  );
 }
 
 .section-title-row {
