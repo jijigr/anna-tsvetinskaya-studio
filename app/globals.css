@@ -142,7 +142,7 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   overflow: hidden;
-  background: var(--pale-pink);
+  background: #ffdeee;
 }
 
 .hero-copy {
@@ -150,9 +150,7 @@ img {
   z-index: 5;
   align-self: center;
   padding: 80px clamp(24px, 4.5vw, 72px);
-  background:
-    radial-gradient(circle at 12% 5%, rgba(246, 169, 191, 0.22), transparent 34%),
-    var(--pale-pink);
+  background: #ffdeee;
 }
 
 .eyebrow,
@@ -200,13 +198,15 @@ img {
 .hero-visual {
   position: relative;
   min-height: 820px;
+  display: grid;
+  place-items: center;
   overflow: hidden;
-  background: var(--pink);
+  background: #ffdeee;
 }
 
 .hero-visual > img {
   width: 100%;
-  height: 100%;
+  height: 76%;
   object-fit: cover;
   object-position: 52% center;
 }
@@ -670,10 +670,14 @@ img {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--line);
-  background: var(--cream);
+  background: #ffffff;
 }
 
 .reviews-grid blockquote.review--pink {
+  background: #ffdeee;
+}
+
+.reviews-grid blockquote:nth-child(3) {
   background: var(--pink);
 }
 
