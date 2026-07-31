@@ -30,14 +30,14 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     openGraph: {
       title: "Beauty Mafia — Дом красоты",
-      description: "Твоя красота. Твои правила.",
+      description: "Позволь себе сиять сегодня.",
       type: "website",
       images: [`${origin}/og.png`],
     },
     twitter: {
       card: "summary_large_image",
       title: "Beauty Mafia — Дом красоты",
-      description: "Твоя красота. Твои правила.",
+      description: "Позволь себе сиять сегодня.",
       images: [`${origin}/og.png`],
     },
   };
