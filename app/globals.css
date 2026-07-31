@@ -5,6 +5,7 @@
   --pink: #f6a9bf;
   --pink-hot: #eb6d9a;
   --blush: #fff4f6;
+  --pale-pink: #fff2f6;
   --cream: #fffaf7;
   --line: rgba(36, 26, 30, 0.17);
 }
@@ -137,13 +138,11 @@ img {
 }
 
 .hero {
-  min-height: calc(100svh - 88px);
+  min-height: max(calc(100svh - 88px), 820px);
   display: grid;
-  grid-template-columns: minmax(0, 1.72fr) minmax(360px, 0.88fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   overflow: hidden;
-  background:
-    radial-gradient(circle at 15% 0%, rgba(246, 169, 191, 0.35), transparent 31%),
-    var(--cream);
+  background: var(--pale-pink);
 }
 
 .hero-copy {
@@ -151,6 +150,9 @@ img {
   z-index: 5;
   align-self: center;
   padding: 80px clamp(24px, 4.5vw, 72px);
+  background:
+    radial-gradient(circle at 12% 5%, rgba(246, 169, 191, 0.22), transparent 34%),
+    var(--pale-pink);
 }
 
 .eyebrow,
@@ -173,8 +175,9 @@ img {
 
 .hero h1 {
   width: 100%;
-  max-width: 880px;
-  font-size: clamp(54px, 5.8vw, 94px);
+  max-width: 760px;
+  font-size: clamp(70px, 7.2vw, 118px);
+  line-height: 0.78;
 }
 
 .hero h1 span,
@@ -187,7 +190,7 @@ img {
 }
 
 .hero-lead {
-  max-width: 670px;
+  max-width: 610px;
   margin: 34px 0 0;
   font-size: clamp(16px, 1.25vw, 20px);
   line-height: 1.55;
@@ -196,7 +199,7 @@ img {
 
 .hero-visual {
   position: relative;
-  min-height: 720px;
+  min-height: 820px;
   overflow: hidden;
   background: var(--pink);
 }
@@ -519,6 +522,7 @@ img {
 
 .service-card {
   position: relative;
+  height: clamp(460px, 40vw, 610px);
   min-height: 0;
   align-self: start;
   overflow: hidden;
@@ -528,12 +532,12 @@ img {
 
 .service-card--square {
   grid-column: 1;
-  aspect-ratio: 1;
+  aspect-ratio: auto;
 }
 
 .service-card--landscape {
   grid-column: 2;
-  aspect-ratio: 1.45;
+  aspect-ratio: auto;
 }
 
 .service-card img,
@@ -816,7 +820,7 @@ img {
   }
 
   .hero {
-    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
   .hero-copy {
@@ -825,11 +829,11 @@ img {
 
   .hero h1 {
     width: 100%;
-    font-size: clamp(50px, 6.8vw, 70px);
+    font-size: clamp(62px, 7.4vw, 78px);
   }
 
   .hero-visual {
-    min-height: 650px;
+    min-height: 820px;
   }
 
   .feature-grid {
@@ -885,7 +889,8 @@ img {
 
   .hero h1 {
     width: auto;
-    font-size: clamp(48px, 15.5vw, 68px);
+    font-size: clamp(58px, 17.2vw, 76px);
+    line-height: 0.8;
   }
 
   .hero-lead {
@@ -953,16 +958,16 @@ img {
 
   .service-card {
     min-height: 0;
-    height: auto;
+    height: 440px;
     margin-bottom: 10px;
   }
 
   .service-card--square {
-    aspect-ratio: 1;
+    aspect-ratio: auto;
   }
 
   .service-card--landscape {
-    aspect-ratio: 1.25;
+    aspect-ratio: auto;
   }
 
   .service-note {
