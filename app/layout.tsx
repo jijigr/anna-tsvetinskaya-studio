@@ -28,13 +28,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Пространство красоты Анны Цветинской",
       description: "Красота в вашем ритме. Запись по телефону +7 924 111-55-44.",
       type: "website",
-      images: [`${origin}/og.png`],
+      images: [`${origin}/og-anna-v2.png`],
     },
     twitter: {
       card: "summary_large_image",
       title: "Пространство красоты Анны Цветинской",
       description: "Красота в вашем ритме.",
-      images: [`${origin}/og.png`],
+      images: [`${origin}/og-anna-v2.png`],
     },
   };
 }
