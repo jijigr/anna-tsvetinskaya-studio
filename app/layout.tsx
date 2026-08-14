@@ -21,23 +21,19 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(origin),
-    title: "Beauty Mafia — Дом красоты в Комсомольске-на-Амуре",
+    title: "Пространство красоты Анны Цветинской",
     description:
-      "Макияж, укладки, брови и моментальный загар. Дом красоты на Аллее Труда, 28.",
-    icons: {
-      icon: "/favicon.svg",
-      shortcut: "/favicon.svg",
-    },
+      "Волосы, ногти, брови, ресницы и солярий в Комсомольске-на-Амуре. Проспект Первостроителей, 41.",
     openGraph: {
-      title: "Beauty Mafia — Дом красоты",
-      description: "Позволь себе сиять сегодня.",
+      title: "Пространство красоты Анны Цветинской",
+      description: "Красота в вашем ритме. Запись по телефону +7 924 111-55-44.",
       type: "website",
       images: [`${origin}/og.png`],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Beauty Mafia — Дом красоты",
-      description: "Позволь себе сиять сегодня.",
+      title: "Пространство красоты Анны Цветинской",
+      description: "Красота в вашем ритме.",
       images: [`${origin}/og.png`],
     },
   };
