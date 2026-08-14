@@ -33,7 +33,7 @@ const services = [
 ];
 
 const gallery = [
-  ["/photos/studio-05.jpg", "Глянцевые длинные волосы после ухода"],
+  ["/photos/gallery-hair-left-user.png", "Гладкие светлые волосы после ухода"],
   ["/photos/studio-10.jpg", "Интерьер пространства красоты"],
   ["/photos/gallery-hair-user.png", "Укладка на тёмные волосы"],
   ["/photos/studio-06.jpg", "Зона ожидания салона"],
