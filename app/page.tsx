@@ -21,21 +21,21 @@ const services = [
     title: "Брови и ресницы",
     text: "Коррекция, окрашивание, ламинирование и наращивание — от естественного до выразительного эффекта.",
     note: "Подберём процедуру",
-    image: "/photos/studio-01.jpg",
+    image: "/photos/service-brows-user.png",
   },
   {
     number: "04",
     title: "Солярий",
     text: "Вертикальный турбосолярий для ровного оттенка и красивого сияния кожи.",
     note: "По предварительной записи",
-    image: "/photos/studio-12.jpg",
+    image: "/photos/service-solarium-user.png",
   },
 ];
 
 const gallery = [
   ["/photos/studio-05.jpg", "Глянцевые длинные волосы после ухода"],
   ["/photos/studio-10.jpg", "Интерьер пространства красоты"],
-  ["/photos/studio-03.jpg", "Ровный срез и окрашивание волос"],
+  ["/photos/gallery-hair-user.png", "Укладка на тёмные волосы"],
   ["/photos/studio-06.jpg", "Зона ожидания салона"],
   ["/photos/studio-11.jpg", "Укладка на длинные волосы"],
 ];
